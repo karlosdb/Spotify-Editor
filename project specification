@@ -1,0 +1,31 @@
+A project specification : project purpose, methodologies, appearance, and user
+interface
+
+Project Purpose:
+    This is an application to make it easier to add/remove songs from playlists. I wanted
+    to make this app because in default spotify, adding/removing songs from a playlists
+    takes a right click and a menu browse to do. Which is very arduous when doing it for
+    large amounts of songs, such as if you are going through a new playlist and looking
+    for songs to add to your other playlists, or if you were looking to clean out a large playlist.
+    I also added the function of 'moving' a song, meaning, delete it from the current playlist
+    and move it to another specified playlist.
+    This is all meant to be done in a fairly lightweight way, either by clicking hotkeys or
+    pressing a button in a simple GUI.
+
+Methodologies:
+    Of course I had to figure out how to use the spotify API for this application. Also uses a lot
+    of the 'keyboard' module, for hotkeys. The controller utilizes Tkinter, and doesn't directly control
+    the main app, it just sends virtual keypresses corresponding to the hotkeys of the main console app.
+    For this reason, the controller must be launched separately, as I could not make it work with the console
+    app simultaneously and directly.
+    The project was originally created to just be a console app, and the GUI was just an add-on in order to
+    make learning all the hotkeys optional.
+
+Appearance:
+    The main app is just a console app, printing out necessary information. The GUI is a separate Tkinter app to interface with
+    the console app without having to press the hotkeys.
+
+Interface:
+    The user has to interface with the console app directly when logging in, and when choosing playlists for focus options. The rest is done
+    through keyboard hotkeys either through the GUI or directly by the user using their keyboard. All updated information is displayed in the
+    console app.
